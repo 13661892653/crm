@@ -1,0 +1,8 @@
+package com.xlh.crm.mapper;
+
+import com.xlh.crm.dto.mysql.FiTmpExcelJxNormalBalanceTable;
+import com.xlh.crm.dto.mysql.FiTmpExcelJxNormalProfitTable;
+import com.xlh.crm.utils.MyMapper;
+
+public interface FiTmpExcelJxNormalProfitTableMapper extends MyMapper<FiTmpExcelJxNormalProfitTable> {
+}

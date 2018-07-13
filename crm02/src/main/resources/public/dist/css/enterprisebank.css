@@ -1,0 +1,369 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+  box-shadow: 0 0 1px 1px rgba(158, 161, 163, 0.16);
+}
+
+/* 搜索页样式 */
+.classification {
+  padding: 30px;
+}
+
+.group {
+  position: relative;
+  height: 26px;
+  margin-bottom: 25px;
+}
+
+.group .head {
+  position: absolute;
+  width: 180px;
+  top: 0;
+  left: 0;
+}
+
+.group .head h4 {
+  display: inline-block;
+  width: 110px;
+  padding-right: 12px;
+  text-align: right;
+  font-size: 14px;
+  color: #626262;
+}
+
+.group .head span {
+  display: inline-block;
+  width: 60px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  font-size: 14px;
+  color: #419be9;
+  border: 1px solid #419be9;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.group .head span.all {
+  background: #419be9;
+  color: #fff;
+}
+
+.group .body {
+  margin-left: 185px;
+  padding-right: 100px;
+}
+
+.group .body span {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #626262;
+  cursor: pointer;
+  padding: 0 7px;
+  white-space: nowrap;
+  margin-bottom: 5px;
+}
+
+.group .body span:hover {
+  color: #419be9;
+}
+
+.group .body span.cur {
+  background: #419be9;
+  color: #fff;
+}
+
+.group .body .industry {
+  position: relative;
+  font-size: 14px;
+  height: 26px;
+  line-height: 26px;
+  color: #333;
+}
+
+.group .body .industry p {
+  display: inline-block;
+  padding: 0 7px;
+  cursor: pointer;
+}
+
+.group .body .industry p:after {
+  display: inline-block;
+  content: '';
+  border-top: 6px solid #419be9;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+.group .body .industry .industry-panel {
+  top: 30px;
+  left: 10px;
+}
+
+.result-count {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.result-count p {
+  font-size: 14px;
+  color: #626262;
+  font-weight: bold;
+}
+
+.result-count p span {
+  color: #e70000;
+}
+
+.industry-panel {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 42px;
+  width: 272px;
+  padding-bottom: 10px;
+  background: #fff;
+  z-index: 99999;
+  box-shadow: 0 0 6px 1px rgba(158, 161, 163, 0.26);
+  border: 1px solid #eee;
+}
+
+.industry-panel .all {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.industry-panel .all em {
+  display: inline-block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.industry-box > li {
+  position: relative;
+}
+
+.industry-box > li .classA {
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.industry-box > li .classB {
+  display: none;
+  background: #fff;
+  position: absolute;
+  width: 260px;
+  left: 270px;
+  top: 0;
+  border: 1px solid #eee;
+  box-shadow: 0 0 6px 1px rgba(158, 161, 163, 0.16);
+}
+
+.industry-box > li .classB li {
+  display: inline-block;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+
+.industry-box > li .classB li:hover {
+  background: #f3f3f3;
+}
+
+.arrow-right {
+  position: relative;
+}
+
+.arrow-right:after {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-block;
+  content: '';
+  border-left: 6px solid #ddd;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+.classification .period {
+  position: relative;
+  z-index: 9999;
+}
+
+.classification .period input {
+  float: left;
+  width: 120px;
+  height: 24px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #888;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+}
+
+.classification .period em {
+  float: left;
+  color: #888;
+  margin: 0 2px;
+}
+
+.paging {
+  height: 60px;
+  padding-top: 12px;
+}
+
+.pagination {
+  position: relative;
+  width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  zoom: 1;
+}
+
+.pagination:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.pagination span {
+  float: left;
+  margin: 0 5px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.pagination .active {
+  color: #419be9;
+  border: 1px solid #419be9;
+}
+
+.pagination > a {
+  float: left;
+  margin: 0 5px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #bdbdbd;
+  background: #fff;
+  border: 1px solid #ebebeb;
+}
+
+.pagination > a:hover {
+  color: #419be9;
+  background: #fff;
+  border: 1px solid #419be9;
+}
+
+.pagination p {
+  float: left;
+  line-height: 38px;
+  font-size: 12px;
+  color: #999;
+}
+
+.pagination .jumparea {
+  float: left;
+  font-size: 12px;
+  color: #999;
+  margin-left: 30px;
+}
+
+.pagination .jumparea input[type="text"] {
+  box-sizing: border-box;
+  margin: 0 5px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  color: #333;
+  font-size: 14px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.pagination .jumparea a {
+  display: inline-block;
+  margin-left: 15px;
+  width: 62px;
+  height: 38px;
+  line-height: 38px;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  color: #333;
+  font-size: 14px;
+}
+
+.pagination .jumparea a:hover {
+  color: #419be9;
+  background: #fff;
+  border: 1px solid #419be9;
+}
+
+.pagination .next,
+.pagination .prev {
+  font-family: "Simsun";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pagination .now,
+.pagination .count {
+  padding: 0 5px;
+  color: #f00;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  background: transparent\9;
+  zoom: 1\8;
+  /* required for the filters */
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* IE5.5-7 */
+  z-index: 999;
+}

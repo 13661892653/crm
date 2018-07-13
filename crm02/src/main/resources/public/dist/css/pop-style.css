@@ -1,0 +1,14 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font-family:Arial, Helvetica, sans-serif;}
+
+/* extbkbox */
+.extbkbox{width:280px;background:#FFFFFF;border:solid 1px #c0c0c0;position:fixed !Important;bottom:0;float:left;position:absolute;z-index:1000;}
+*html .extbkbox{top:expression(offsetParent.scrollTop+20);}
+.extbkbox{right:0px;border:0;}
+.extbkboxm{clear:both;height:30px;font-size:14px;color:#FFFFFF;font-weight:bold;line-height:30px;background:#FF6600;border-bottom:solid 1px #c0c0c0;}
+.extbkboxm .extmore{float:right;cursor:pointer;}
+.extbkboxb{font-size:13px;color:#1e1e1e;clear:both;height:auto;padding:10px 0px;}
+.extbkboxnar{color:#f00;display:block;width:40px;height:30px;background:url(../img/tanchu_05.gif) no-repeat center center;}
+.extbkboxnarove{color:#00f;width:40px;height:30px;background:url(../img/tanchu_03.gif) no-repeat center center;display:block;}

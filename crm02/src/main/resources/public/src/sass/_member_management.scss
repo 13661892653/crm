@@ -1,0 +1,120 @@
+/* 会员管理页样式 */
+
+.member-info {
+  padding: 30px;
+  &:after {
+    @include clearfloat;
+  }
+}
+
+.portrait {
+  float: left;
+  margin-top: 15px;
+  margin-left: 50px;
+  width: 100px;
+  img {
+    @include wh(100px);
+    border-radius: 50%;
+  }
+  p {
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 14px;
+  }
+}
+
+.personal {
+  margin-top: 30px;
+  .row {
+    margin-bottom: 6px;
+    label {
+      font-size: 16px;
+      color: #333;
+    }
+    p {
+      display: inline-block;
+      font-size: 16px;
+      color: #333;
+      span {
+        color: red;
+      }
+    }
+  }
+  &:after {
+    @include clearfloat;
+  }
+}
+
+.left {
+  float: left;
+  margin-left: 80px;
+}
+
+.bill {
+  padding: 20px;
+  .title {
+    height: 50px;
+    padding-bottom: 20px;
+    h3 {
+      display: inline-block;
+      height: 28px;
+      font-size: 18px;
+      color: #333;
+      border-left: 3px solid #419be9;
+      padding-left: 10px;
+    }
+    .month-bill {
+      float: right;
+      p {
+        display: inline-block;
+        font-size: 16px;
+        color: #333;
+        margin-right: 10px;
+        span {
+          color: #e82222;
+          font-weight: bold;
+        }
+      }
+      select {
+        width: 160px;
+        height: 28px;
+        border: 1px solid #ccc;
+        outline: none;
+        margin-right: 10px;
+      }
+      form {
+        display: inline-block;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    thead {
+      th {
+        height: 50px;
+        background: #f8f8f8;
+        font-size: 14px;
+        color: #888;
+        text-align: center;
+      }
+    }
+    tbody {
+      tr {
+        height: 45px;
+        border-bottom: 1px solid #eee;
+        td {
+          text-align: center;
+          height: 45px;
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+

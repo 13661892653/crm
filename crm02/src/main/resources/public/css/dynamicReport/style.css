@@ -1,0 +1,20 @@
+@charset "utf-8";
+.clear { clear: both; zoom: 1; }
+.both { clear: both; }
+.left { display: inline; float: left }
+.right { display: inline; float: right }
+.table { border-collapse: collapse; }
+#example.handsontable td, #example.handsontable th { height: 32px !important;line-height: 32px !important; text-align: center; box-sizing: border-box; }
+.notes { padding-left: 15px; padding-bottom: 10px }
+.myinput { height: 20px; line-height: 20px; border: 1px solid #ccc; width: 90% }
+.navbar-form .form-control{width: 100px!important}
+/*.table_style table tr th {height: 32px;line-height: 32px;position: relative;color: #333;  text-align: center;font-size:  14px ;font-weight: normal;padding: 10px;}*/
+.table_style table tr th{position:relative;color:#333;font-size:14px;font-weight:normal;padding:15px 10px 5px 10px;}
+.table_style table tr th input{height:25px;line-height:25px;width:100%;min-width:100px;}
+.table_style table tr th input.error{border:1px solid red;}
+.table_style table tr.title th{background:#f3f3f3;}
+.table_style caption{text-align:center;}
+.msg { position: relative; font-size: 12px; color: #ff0000; display: none; padding:2px 0 0px 0; visibility: hidden; display: block;}
+#posttable .pure-control-group {margin-bottom: 10px;}
+#posttable .pure-control-group .msg { margin-left: 60px; }
+.reportTitle { margin-bottom: 10px; font-size: 14px; }
